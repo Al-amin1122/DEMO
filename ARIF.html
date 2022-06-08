@@ -2,12 +2,4322 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>application</title>
+	<title>Mobile Recharge</title>
+	<style>
+	    *{
+ margin:0px;
+ padding:0px;
+}
+         /*-----------------Home Page Start--------------- */
+.HomePage{
+  top:50%;
+  left:50%;
+	width:320px;
+	height:580px;
+	position:absolute;
+	background:#f1f1f1;
+	transform:translate(-50%, -50%);
+	border-radius:55px 55px 45px 45px;
+	background-size:cover;
+	background-position:center center;
+	background-image:url("file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/b.jpg");
+}
+.section1 marquee{
+  color:#999;
+  font-size:18px;
+	margin-top:25px;
+	border-bottom:1px solid gray;
+}
+.section2 h3{
+  color:gray;
+  font-size:28px;
+  margin-top:35px;
+  text-align:center;
+}
+.operators{
+  width:100%;
+	margin-top:35px;
+}
+.operators h4{
+  color:#888;
+  width:100px;
+  padding:10px 0px;
+  margin:19px 0px;
+  text-align:center;
+  margin-left:110px;
+	background:#ddd;
+	border-radius:25px;
+	font-family:arial black;
+	transition:0.8s;
+}
+.operators h4:hover{
+  color:orange;
+	background:#666;
+}
+.Button{
+	width:100%;
+  overflow:hidden;
+  top:93.5px;
+  position:relative;
+  border-radius:0px 0px 45px 45px;
+}
+.Button button{
+  color:gray;
+	float:right;
+	font-size:22px;
+	border:none;
+	outline:none;
+	padding:7px 30px;
+	margin-right:-1px;
+	border-radius:45px 0px 45px 0px;
+}
+            /*-----------------Home Page End---------------*/
+ /*----------------------------Airtel Page Start---------------------------*/          
+.AirtelDetails.active{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.AirtelDetails{
+  top:50%;
+  left:50%;
+	width:320px;
+	height:580px;
+	position:absolute;
+	background:#444;
+	transform:translate(-50%, -50%);
+	border-radius:55px 55px 45px 45px;
+	opacity:0;
+	pointer-events:none;
+}
+.AirtelNavBar h3{
+ color:#ddd;
+ width:100%;
+ padding:15px 0px;
+ text-align:center;
+ background:#444;
+ border-radius:55px 55px 0px 0px;
+}
+.AirtelOffers{
+ width:100%;		
+ padding:2px 0px;		
+ background:#666;	
+ border-bottom:1.5px solid #555;
+}
+.AirtelOffers button{
+  font-size:17px;
+	border:none;
+	outline:none;
+	padding:3.5px 5px;
+	margin:0px 3px;
+	border-radius:25px;
+	background:green;
+	}
+.AirtelOffers button:hover{
+  color:#ddd;
+	background:#444;
+	transition:all 1s;
+}
+.AirtelInternetInfo.active1{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.AirtelInternetInfo{
+	width:100%;
+	top:94px;
+	left:0px;
+	position:absolute;
+	opacity:0;
+	pointer-events:none;
+}
+.AirtelInterneTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.AirtelInterneTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.AirtelInterneTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.AirtelMinuteInfo.active2{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.AirtelMinuteInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.AirtelMinuteTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.AirtelMinuteTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.AirtelMinuteTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.AirtelCallRateInfo.active3{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.AirtelCallRateInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.AirtelCallRateTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.AirtelCallRateTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.AirtelCallRateTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.AirtelCombooInfo.active4{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.AirtelCombooInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.AirtelCombooTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.AirtelCombooTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+ .AirtelCombooTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center; 
+}
+.AirtelButtons{
+	width:99.5%;
+	margin:auto;
+	margin-top:459.5px;
+	background:#555;
+	overflow:hidden;
+	border-radius:0px 0px 45px 45px;
+}
+.AirtelButtons .AirtelExitButton{
+  float:left;
+  font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	margin-left:-1px;
+	padding:7px 30px;
+	border-radius:0px 45px 0px 45px;
+}
+.AirtelButtons .AirtelContinueButton{
+	float:right;
+	font-size:18px;
+	border:none;
+	outline:none;
+	padding:7px 18px;
+	margin-top:1px;
+	background:tomato;
+	border-radius:45px 0px 45px 0px;
+}
+            /*-----------------Airtel Page End------------------*/
+/*----------------------------Robi Page Start---------------------------*/
+.RobiDetails.active10{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.RobiDetails{
+  top:50%;
+  left:50%;
+	width:320px;
+	height:580px;
+	position:absolute;
+	background:#444;
+	transform:translate(-50%, -50%);
+	border-radius:55px 55px 45px 45px;
+	opacity:0;
+	pointer-events:none;
+}
+.RobiNavBar h3{
+ color:#ddd;
+ width:100%;
+ padding:15px 0px;
+ text-align:center;
+ background:#444;
+ border-radius:55px 55px 0px 0px;
+}
+.RobiOffers{
+ width:100%;		
+ padding:2px 0px;		
+ background:#666;	
+ border-bottom:1.5px solid #555;
+}
+.RobiOffers button{
+  font-size:17px;
+	border:none;
+	outline:none;
+	padding:3.5px 5px;
+	margin:0px 3px;
+	border-radius:25px;
+	background:green;
+	}
+.RobiOffers button:hover{
+  color:#ddd;
+	background:#444;
+	transition:all 1s;
+}
+.RobiInternetInfo.active11{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.RobiInternetInfo{
+	width:100%;
+	top:94px;
+	left:0px;
+	position:absolute;
+	opacity:0;
+	pointer-events:none;
+}
+.RobiInterneTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.RobiInterneTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.RobiInterneTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.RobiMinuteInfo.active12{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.RobiMinuteInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.RobiMinuteTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.RobiMinuteTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.RobiMinuteTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.RobiCallRateInfo.active13{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.RobiCallRateInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.RobiCallRateTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.RobiCallRateTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.RobiCallRateTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.RobiCombooInfo.active14{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.RobiCombooInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.RobiCombooTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.RobiCombooTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+ .RobiCombooTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#666;
+	text-align:center; 
+}
+.RobiButtons{
+	width:99.5%;
+	margin:auto;
+	margin-top:459.5px;
+	background:#555;
+	overflow:hidden;
+	border-radius:0px 0px 45px 45px;
+}
+.RobiButtons .RobiExitButton{
+  float:left;
+  font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	margin-left:-1px;
+	padding:7px 30px;
+	border-radius:0px 45px 0px 45px;
+}
+.RobiButtons .RobiContinueButton{
+	float:right;
+	font-size:18px;
+	border:none;
+	outline:none;
+	padding:7px 18px;
+	margin-top:1px;
+	background:tomato;
+	border-radius:45px 0px 45px 0px;
+}
+            
+
+/*----------------------------Robi Page End-----------------------------*/
+/*----------------------------Teletalk Page Start-----------------------------*/
+.TeletalkDetails.active20{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.TeletalkDetails{
+  top:50%;
+  left:50%;
+	width:320px;
+	height:580px;
+	position:absolute;
+	background:#444;
+	transform:translate(-50%, -50%);
+	border-radius:55px 55px 45px 45px;
+	opacity:0;
+	pointer-events:none;
+}
+.TeletalkNavBar h3{
+ color:#ddd;
+ width:100%;
+ padding:15px 0px;
+ text-align:center;
+ background:#444;
+ border-radius:55px 55px 0px 0px;
+}
+.TeletalkOffers{
+ width:100%;		
+ padding:2px 0px;		
+ background:#666;	
+ border-bottom:1.5px solid #555;
+}
+.TeletalkOffers button{
+  font-size:17px;
+	border:none;
+	outline:none;
+	padding:3.5px 5px;
+	margin:0px 3px;
+	border-radius:25px;
+	background:green;
+	}
+.TeletalkOffers button:hover{
+  color:#ddd;
+	background:#444;
+	transition:all 1s;
+}
+.TeletalkInternetInfo.active21{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.TeletalkInternetInfo{
+	width:100%;
+	top:94px;
+	left:0px;
+	position:absolute;
+	opacity:0;
+	pointer-events:none;
+}
+.TeletalkInterneTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.TeletalkInterneTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.TeletalkInterneTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.TeletalkMinuteInfo.active22{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.TeletalkMinuteInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.TeletalkMinuteTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.TeletalkMinuteTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.TeletalkMinuteTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.TeletalkCallRateInfo.active23{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.TeletalkCallRateInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.TeletalkCallRateTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.TeletalkCallRateTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.TeletalkCallRateTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.TeletalkCombooInfo.active24{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.TeletalkCombooInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.TeletalkCombooTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.TeletalkCombooTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+ .TeletalkCombooTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center; 
+}
+.TeletalkButtons{
+	width:99.5%;
+	margin:auto;
+	margin-top:459.5px;
+	background:#555;
+	overflow:hidden;
+	border-radius:0px 0px 45px 45px;
+}
+.TeletalkButtons .TeletalkExitButton{
+  float:left;
+  font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	margin-left:-1px;
+	padding:7px 30px;
+	border-radius:0px 45px 0px 45px;
+}
+.TeletalkButtons .TeletalkContinueButton{
+	float:right;
+	font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	padding:7px 18px;
+	background:tomato;
+	border-radius:45px 0px 45px 0px;
+}
+/*----------------------------Teletalk Page End-----------------------------*/
+/*--Grameen---*/
+.GrameenDetails.active30{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.GrameenDetails{
+  top:50%;
+  left:50%;
+	width:320px;
+	height:580px;
+	position:absolute;
+	background:#444;
+	transform:translate(-50%, -50%);
+	border-radius:55px 55px 45px 45px;
+	opacity:0;
+	pointer-events:none;
+}
+.GrameenNavBar h3{
+ color:#ddd;
+ width:100%;
+ padding:15px 0px;
+ text-align:center;
+ background:#444;
+ border-radius:55px 55px 0px 0px;
+}
+.GrameenOffers{
+ width:100%;		
+ padding:2px 0px;		
+ background:#666;	
+ border-bottom:1.5px solid #555;
+}
+.GrameenOffers button{
+  font-size:17px;
+	border:none;
+	outline:none;
+	padding:3.5px 5px;
+	margin:0px 3px;
+	border-radius:25px;
+	background:green;
+	}
+.GrameenOffers button:hover{
+  color:#ddd;
+	background:#444;
+	transition:all 1s;
+}
+.GrameenInternetInfo.active31{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.GrameenInternetInfo{
+	width:100%;
+	top:94px;
+	left:0px;
+	position:absolute;
+	opacity:0;
+	pointer-events:none;
+}
+.GrameenInterneTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.GrameenInterneTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.GrameenInterneTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.GrameenMinuteInfo.active32{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.GrameenMinuteInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.GrameenMinuteTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.GrameenMinuteTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.GrameenMinuteTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.GrameenCallRateInfo.active33{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.GrameenCallRateInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.GrameenCallRateTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.GrameenCallRateTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.GrameenCallRateTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.GrameenCombooInfo.active34{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.GrameenCombooInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.GrameenCombooTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.GrameenCombooTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+ .GrameenCombooTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center; 
+}
+.GrameenButtons{
+	width:99.5%;
+	margin:auto;
+	margin-top:459.5px;
+	background:#555;
+	overflow:hidden;
+	border-radius:0px 0px 45px 45px;
+}
+.GrameenButtons .GrameenExitButton{
+  float:left;
+  font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	margin-left:-1px;
+	padding:7px 30px;
+	border-radius:0px 45px 0px 45px;
+}
+.GrameenButtons .GrameenContinueButton{
+	float:right;
+	font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	padding:7px 18px;
+	background:tomato;
+	border-radius:45px 0px 45px 0px;
+}
+      /*----------------------- Banglalink--------------------------*/
+.BanglalinkDetails.active35{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.BanglalinkDetails{
+  top:50%;
+  left:50%;
+	width:320px;
+	height:580px;
+	position:absolute;
+	background:#444;
+	transform:translate(-50%, -50%);
+	border-radius:55px 55px 45px 45px;
+	opacity:0;
+	pointer-events:none;
+}
+.BanglalinkNavBar h3{
+ color:#ddd;
+ width:100%;
+ padding:15px 0px;
+ text-align:center;
+ background:#444;
+ border-radius:55px 55px 0px 0px;
+}
+.BanglalinkOffers{
+ width:100%;		
+ padding:2px 0px;		
+ background:#666;	
+ border-bottom:1.5px solid #555;
+}
+.BanglalinkOffers button{
+  font-size:17px;
+	border:none;
+	outline:none;
+	padding:3.5px 5px;
+	margin:0px 3px;
+	border-radius:25px;
+	background:green;
+	}
+.BanglalinkOffers button:hover{
+  color:#ddd;
+	background:#444;
+	transition:all 1s;
+}
+.BanglalinkInternetInfo.active36{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.BanglalinkInternetInfo{
+	width:100%;
+	top:94px;
+	left:0px;
+	position:absolute;
+	opacity:0;
+	pointer-events:none;
+}
+.BanglalinkInterneTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.BanglalinkInterneTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.BanglalinkInterneTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.BanglalinkMinuteInfo.active37{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.BanglalinkMinuteInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.BanglalinkMinuteTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.BanglalinkMinuteTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.BanglalinkMinuteTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.BanglalinkCallRateInfo.active38{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.BanglalinkCallRateInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.BanglalinkCallRateTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.BanglalinkCallRateTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+.BanglalinkCallRateTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center;
+}
+.BanglalinkCombooInfo.active39{
+	opacity:1;
+	z-index:5;
+	pointer-events:auto;
+	transform:translate(-50%, -50%) scale(1);
+}
+.BanglalinkCombooInfo{
+ width:100%;
+ position:absolute;
+ margin-top:11px;
+ left:0px;
+ background:#444;
+ opacity:0;
+ pointer-events:none;
+}
+.BanglalinkCombooTabletInfo{
+	width:100%;
+	position:absolute;
+	margin-top:-11px;
+	margin-left:160px;
+	border:1px solid gray;
+	border-collapse:collapse;
+}
+.BanglalinkCombooTabletInfo th{
+  color:#ddd;
+  padding:1px 0px;
+  text-align:center;
+	background:navy;
+	font-family:arial black;
+}
+ .BanglalinkCombooTabletInfo td{
+  color:#ddd;
+  padding:1px 0px;
+	background:#555;
+	text-align:center; 
+}
+.BanglalinkButtons{
+	width:99.5%;
+	margin:auto;
+	margin-top:459.5px;
+	background:#555;
+	overflow:hidden;
+	border-radius:0px 0px 45px 45px;
+}
+.BanglalinkButtons .BanglalinkExitButton{
+  float:left;
+  font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	margin-left:-1px;
+	padding:7px 30px;
+	border-radius:0px 45px 0px 45px;
+}
+.BanglalinkButtons .BanglalinkContinueButton{
+	float:right;
+	font-size:18px;
+	border:none;
+	outline:none;
+	margin-top:1px;
+	padding:7px 18px;
+	background:tomato;
+	border-radius:45px 0px 45px 0px;
+}
+
+	</style>
 </head>
 <body>
-		<p>Paragraph</p>
+				
+<!------------------------------Home Page Start------------------------------->
+
+<div class="HomePage">
+  <div class="section1">
+     <marquee>এখানে সকল সিমের রিচার্জ করা হয়!</marquee>
+  </div>
+  <div class="section2">
+  		<h3>Recharge Operator</h3>
+  </div>
+  <div class="operators">
+	  <h4>Airtel</h4>			
+	  <h4>Robi</h4>		
+	  <h4>Teletalk</h4>			
+	  <h4>Grmeen</h4>		
+	  <h4>Banglalink</h4>			
+  </div>
+  <div class="Button">
+		<button>Next</button>
+  </div>
+</div> 
+          <!--------------------Home Page End---------------------->
+<!------------------------------Airtel Page Start---------------------------->
+<div class="AirtelDetails">
+		<div class="AirtelNavBar">
+					 <h3>Airtel</h3>
+				</div>
+				<div class="AirtelOffers">
+						<button class="AirtelInternetButton">Internet</button>
+						<button class="AirtelMinuteButton">Minute</button>
+						<button class="AirtelCallRateButton">Call-Rate</button>
+						<button class="AirtelCombooButton">Comboo</button>
+				</div>
+<!---------------------------Airtel Internet Section Start------------------->
+       <div class="AirtelInternetInfo">
+		 <table class="AirtelInterneTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Internet</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+         <!----------------Airtel Internet Section Ent----------------->				
+<!-------------------------Airtel Minute Section Start------------------------>       
+  <div class="AirtelMinuteInfo">
+		 <table class="AirtelMinuteTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Minute</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 	     <td>14</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		
+		 </table>	
+	</div>	
+           <!-----------Airtel Minute Section End----------------->		 	
+		
+<!------------------------------Call-Rate Section Start----------------------->
+<div class="AirtelCallRateInfo">
+		 <table class="AirtelCallRateTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Call-Rate</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+           <!------------Airtel Call-Rate Section End--------------->	
 	
-	<p>Para2</p>
-	<h3 style="background:#333;color:#ddd;padding:13px;text-align:center;">Welcome to my app</h3>		
+	
+	
+           <!------------Airtel Call-Rate Section End--------------->
+<!-----------------------Airtel Comboo Section Start--------------------------->
+<div class="AirtelCombooInfo">
+		 <table class="AirtelCombooTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Comboo</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 </table>	
+	</div> 
+          <!-------------Airtel Comboo Section End---------------->
+<!-----------------------Airtel Button Section Start-------------------------->
+      <div class="AirtelButtons">
+   	    <button class="AirtelExitButton">Exit</button>
+       	<button class="AirtelContinueButton">Continue</button>
+     </div>
+          <!-------------Airtel Button Section End--------------->              
+<!------------------------------Airtel Page End------------------------------->
+
+
+
+<!------------------------------Robi Page Start------------------------------->
+<div class="RobiDetails">
+		<div class="RobiNavBar">
+					 <h3>Robi</h3>
+				</div>
+				<div class="RobiOffers">
+						<button class="RobiInternetButton">Internet</button>
+						<button class="RobiMinuteButton">Minute</button>
+						<button class="RobiCallRateButton">Call-Rate</button>
+						<button class="RobiCombooButton">Comboo</button>
+				</div>
+<!---------------------------Airtel Internet Section Start------------------->
+       <div class="RobiInternetInfo">
+		 <table class="RobiInterneTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Internet</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+         <!----------------Robi Internet Section End----------------->				
+<!-------------------------Robi Minute Section Start------------------------>       
+  <div class="RobiMinuteInfo">
+		 <table class="RobiMinuteTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Minute</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 	     <td>14</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		
+		 </table>	
+	</div>	
+                   <!-----------Robi Minute Section End----------------->		 		
+<!------------------------------Robi-Rate Section Start----------------------->
+<div class="RobiCallRateInfo">
+		 <table class="RobiCallRateTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Call-Rate</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+           <!------------Robi Call-Rate Section End--------------->	
+	
+	
+	
+           <!------------Robi Call-Rate Section End--------------->
+<!-----------------------Robi Comboo Section Start--------------------------->
+<div class="RobiCombooInfo">
+		 <table class="RobiCombooTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Comboo</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 </table>	
+	</div> 
+          <!-------------Robi Comboo Section End---------------->
+<!-----------------------Robi Button Section Start--------------------------->
+      <div class="RobiButtons">
+   	    <button class="RobiExitButton">Exit</button>
+       	<button class="RobiContinueButton">Continue</button>
+     </div>
+          <!-------------Robi Button Section End--------------->              
+<!------------------------------Robi Page End------------------------------->
+                            
+
+
+
+
+
+<!-----------------------------Teletalk Page Start---------------------------->		 		    
+		 <div class="TeletalkDetails">
+		<div class="TeletalkNavBar">
+					 <h3>Teletalk</h3>
+				</div>
+				<div class="TeletalkOffers">
+						<button class="TeletalkInternetButton">Internet</button>
+						<button class="TeletalkMinuteButton">Minute</button>
+						<button class="TeletalkCallRateButton">Call-Rate</button>
+						<button class="TeletalkCombooButton">Comboo</button>
+				</div>		
+    <!--------------------Teletalk Internet Section Start--------------------->
+  <div class="TeletalkInternetInfo">
+		 <table class="TeletalkInterneTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Internet</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+             <!-------------Teletalk Internet Section End----------------->
+  <!------------------------Teletalk Minute Section Start-------------------->
+  <div class="TeletalkMinuteInfo">
+		 <table class="TeletalkMinuteTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Minute</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 	     <td>14</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+             <!-----------Teletalk Minute Section End----------------->
+<!------------------------Teletalk Call-Rate Section Start-------------------->
+<div class="TeletalkMinuteInfo">
+		 <table class="TeletalkMinuteTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Minute</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 	     <td>14</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		
+		 </table>	
+	</div>
+
+
+           <!------------Teletalk Minute Section End--------------->
+<!-----------------------Teletalk CallRate Section Start--------------------->           
+<div class="TeletalkCallRateInfo">
+		 <table class="TeletalkCallRateTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Call-Rate</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 </table>	
+	</div>           
+           
+           
+           
+           
+           
+           
+<!-----------------------Teletalk CallRate Section End--------------------->            
+<!-----------------------Teletalk Comboo Section Start------------------------>
+<div class="TeletalkCombooInfo">
+		 <table class="TeletalkCombooTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Comboo</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+		 		
+  
+          <!-------------Teletalk Comboo Section End---------------->
+<!-----------------------Teletalk Button Section Start------------------------>
+      <div class="TeletalkButtons">
+   	    <button class="TeletalkExitButton">Exit</button>
+       	<button class="TeletalkContinueButton">Continue</button>
+     </div>
+  </div>
+                 <!-------------Teletalk Button Section End--------------->  
+                             
+<!------------------------------Teletalk Page End----------------------------->
+<!------------------------------Grameen Page Start---------------------------->
+<div class="GrameenDetails">
+   <div class="GrameenNavBar">
+    	 <h3>Grameen</h3>
+   </div>
+    <div class="GrameenOffers">
+    			<button class="GrameenInternetButton">Internet</button>
+    			<button class="GrameenMinuteButton">Minute</button>
+    			<button class="GrameenCallRateButton">Call-Rate</button>
+    			<button class="GrameenCombooButton">Comboo</button>
+    </div>
+
+
+
+
+<!-----------------------Grameen Internet Section Start----------------------->
+<div class="GrameenInternetInfo">
+		 <table class="GrameenInterneTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Internet</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+         <!----------------Grameen Internet Section Ent----------------->
+<!-------------------------Grameen Minute Section Start---------------------->       
+  <div class="GrameenMinuteInfo">
+		 <table class="GrameenMinuteTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Minute</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 	     <td>14</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		
+		 </table>	
+	</div>	
+       <!----------------Grameen Minute Section End-------------->
+<!-----------------------Grameen Call-Rate Section Start--------------------->
+<div class="GrameenCallRateInfo">
+		 <table class="GrameenCallRateTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Call-Rate</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+
+<div class="GrameenCombooInfo">
+		 <table class="GrameenCombooTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Comboo</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+<!-----------------------Grameen Button Section Start------------------------->
+      <div class="GrameenButtons">
+   	    <button class="GrameenExitButton">Exit</button>
+       	<button class="GrameenContinueButton">Continue</button>
+     </div>
+  </div>
+                 <!-------------Grameen Button Section End--------------->
+                 
+                
+               
+                 
+<!------------------------------Grameen Page End---------------------------->
+
+<!------------------------------Banglalink Page Start------------------------>
+ <div class="BanglalinkDetails">
+   <div class="BanglalinkNavBar">
+    	 <h3>Banglalink</h3>
+   </div>
+    <div class="BanglalinkOffers">
+    			<button class="BanglalinkInternetButton">Internet</button>
+    			<button class="BanglalinkMinuteButton">Minute</button>
+    			<button class="BanglalinkCallRateButton">Call-Rate</button>
+    			<button class="BanglalinkCombooButton">Comboo</button>
+    </div>
+
+<div class="BanglalinkInternetInfo">
+		 <table class="BanglalinkInterneTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Internet</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>15GB</td>
+		 			<td>7Days</td>
+		 			<td>148TK</td>
+		 		</tr>
+		 </table>	 
+	</div>
+         <!----------------Banglalink Internet Section Ent-------------->
+<!-------------------------Banglalink Minute Section Start-------------------->       
+  <div class="BanglalinkMinuteInfo">
+		 <table class="BanglalinkMinuteTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Minute</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 	     <td>14</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>210/mins</td>
+		 			<td>30Days</td>
+		 			<td>159TK</td>
+		 		</tr>
+		 		
+		 </table>	
+	</div>	
+       <!----------------Banglalink Minute Section End-------------->
+<!-----------------------Banglalink Call-Rate Section Start------------------->
+<div class="BanglalinkCallRateInfo">
+		 <table class="BanglalinkCallRateTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Call-Rate</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>1.1 p/mins</td>
+		 			<td>60Days</td>
+		 			<td>209TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+
+
+
+<!----------------------Banglalink Comboo Section Start----------------------->
+<div class="BanglalinkCombooInfo">
+		 <table class="BanglalinkCombooTabletInfo" border="1px">
+		 		<tr>
+		 			<th>Num:-</th>
+		 			<th>Comboo</th>
+		 			<th>Days</th>
+		 			<th>Amount</th>
+		 		</tr>
+		 		<tr>
+		 			<td>1.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>2.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>3.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>11.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>12.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>13.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>14.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>15.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>16.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>17.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>18.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>19.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 		<tr>
+		 			<td>20.</td>
+		 			<td>60GB/950-mins</td>
+		 			<td>30Days</td>
+		 			<td>599TK</td>
+		 		</tr>
+		 </table>	
+	</div>
+<!----------------------Banglalink Button Section Start----------------------->
+      <div class="BanglalinkButtons">
+   	    <button class="BanglalinkExitButton">Exit</button>
+       	<button class="BanglalinkContinueButton">Continue</button>
+     </div>
+  </div>
+                 <!-------------Banglalink Button Section End--------------->
+<!------------------------------Banglalink Page End--------------------------->
+
+
+
+<script>
+const Button=document.querySelector(".Button button");
+const AirtelDetails=document.querySelector(".AirtelDetails");
+const AirtelContinueButton=document.querySelector(".AirtelButtons .AirtelContinueButton");
+const RobiDetails=document.querySelector(".RobiDetails");
+const RobiExitButton=document.querySelector(".RobiButtons .RobiExitButton");
+const RobiContinueButton=document.querySelector(".RobiButtons .RobiContinueButton");
+const TeletalkDetails=document.querySelector(".TeletalkDetails");
+const TeletalkExitButton=document.querySelector(".TeletalkButtons .TeletalkExitButton");
+const TeletalkContinueButton=document.querySelector(".TeletalkButtons .TeletalkContinueButton");
+const GrameenDetails=document.querySelector(".GrameenDetails");
+const GrameenExitButton=document.querySelector(".GrameenButtons .GrameenExitButton");
+const GrameenContinueButton=document.querySelector(".GrameenButtons .GrameenContinueButton");
+const BanglalinkDetails=document.querySelector(".BanglalinkDetails");
+const BanglalinkContinueButton=document.querySelector(".BanglalinkButtons .BanglalinkContinueButton");
+const AirtelExitButton=document.querySelector(".AirtelButtons .AirtelExitButton");
+const BanglalinkExitButton=document.querySelector(".BanglalinkButtons .BanglalinkExitButton");
+Button.onclick = () =>{
+	AirtelDetails.classList.add("active");
+	RobiDetails.classList.remove("active10");
+	TeletalkDetails.classList.remove("active20");
+	GrameenDetails.classList.remove("active30");
+	BanglalinkDetails.classList.remove("active35");
+	
+}
+AirtelExitButton.onclick = () =>{
+	AirtelDetails.classList.remove("active");
+}
+AirtelContinueButton.onclick = () =>{
+	RobiDetails.classList.add("active10");
+}
+RobiExitButton.onclick = () =>{
+	RobiDetails.classList.remove("active10");
+}
+RobiContinueButton.onclick = () =>{
+	TeletalkDetails.classList.add("active20");
+}
+TeletalkExitButton.onclick = () =>{
+	TeletalkDetails.classList.remove("active20");
+}
+TeletalkContinueButton.onclick = () =>{
+	GrameenDetails.classList.add("active30");
+}
+TeletalkContinueButton.onclick = () =>{
+	GrameenDetails.classList.add("active30");
+}
+GrameenExitButton.onclick = () =>{
+	GrameenDetails.classList.remove("active30");
+}
+GrameenContinueButton.onclick = () =>{
+	BanglalinkDetails.classList.add("active35");
+}
+BanglalinkExitButton.onclick = () =>{
+	BanglalinkDetails.classList.remove("active35");
+}
+
+
+
+const AirtelInternetButton=document.querySelector(".AirtelOffers .AirtelInternetButton");
+const AirtelInternetInfo=document.querySelector(".AirtelInternetInfo");
+const AirtelMinuteButton=document.querySelector(".AirtelOffers .AirtelMinuteButton");
+const AirtelMinuteInfo=document.querySelector(".AirtelMinuteInfo");
+const AirtelCallRateButton=document.querySelector(".AirtelOffers .AirtelCallRateButton");
+const AirtelCallRateInfo=document.querySelector(".AirtelCallRateInfo");
+const AirtelCombooButton=document.querySelector(".AirtelOffers .AirtelCombooButton");
+const AirtelCombooInfo=document.querySelector(".AirtelCombooInfo");
+
+AirtelInternetButton.onclick = () =>{
+	AirtelInternetInfo.classList.add("active1");
+	AirtelMinuteInfo.classList.remove("active2");
+	AirtelCallRateInfo.classList.remove("active3");
+	AirtelCombooInfo.classList.remove("active4");
+}
+AirtelMinuteButton.onclick = () =>{
+	AirtelMinuteInfo.classList.add("active2");
+	AirtelCallRateInfo.classList.remove("active3");
+	AirtelCombooInfo.classList.remove("active4");
+}
+AirtelCallRateButton.onclick = () =>{
+	AirtelCallRateInfo.classList.add("active3");
+	AirtelCombooInfo.classList.remove("active4");
+}
+AirtelCombooButton.onclick = () =>{
+	AirtelCombooInfo.classList.add("active4");
+}
+
+const RobiInternetButton=document.querySelector(".RobiOffers .RobiInternetButton");
+const RobiMinuteButton=document.querySelector(".RobiOffers .RobiMinuteButton");
+const RobiCallRateButton=document.querySelector(".RobiOffers .RobiCallRateButton");
+const RobiCombooButton=document.querySelector(".RobiOffers .RobiCombooButton");
+
+const RobiInternetInfo=document.querySelector(".RobiInternetInfo");
+const RobiMinuteInfo=document.querySelector(".RobiMinuteInfo");
+const RobiCallRateInfo=document.querySelector(".RobiCallRateInfo");
+const RobiCombooInfo=document.querySelector(".RobiCombooInfo");
+
+RobiInternetButton.onclick = () =>{
+	RobiInternetInfo.classList.add("active11");
+	RobiMinuteInfo.classList.remove("active12");
+	RobiCallRateInfo.classList.remove("active13");
+	RobiCombooInfo.classList.remove("active14");
+}
+RobiMinuteButton.onclick = () =>{
+	RobiMinuteInfo.classList.add("active12");
+	RobiCallRateInfo.classList.remove("active13");
+	RobiCombooInfo.classList.remove("active14");
+}
+RobiCallRateButton.onclick = () =>{
+	RobiCallRateInfo.classList.add("active13");
+	RobiCombooInfo.classList.remove("active14");
+}
+RobiCombooButton.onclick = () =>{
+	RobiCombooInfo.classList.add("active14");
+}
+
+
+
+const TeletalkInternetButton=document.querySelector(".TeletalkOffers .TeletalkInternetButton");
+const TeletalkInternetInfo=document.querySelector(".TeletalkInternetInfo");
+const TeletalkMinuteButton=document.querySelector(".TeletalkOffers .TeletalkMinuteButton");
+const TeletalkMinuteInfo=document.querySelector(".TeletalkMinuteInfo");
+const TeletalkCallRateButton=document.querySelector(".TeletalkOffers .TeletalkCallRateButton");
+const TeletalkCallRateInfo=document.querySelector(".TeletalkCallRateInfo");
+
+const TeletalkCombooButton=document.querySelector(".TeletalkOffers .TeletalkCombooButton");
+const TeletalkCombooInfo=document.querySelector(".TeletalkCombooInfo");
+
+TeletalkInternetButton.onclick = () =>{
+	TeletalkInternetInfo.classList.add("active21");
+	TeletalkMinuteInfo.classList.remove("active22");
+	TeletalkCallRateInfo.classList.remove("active23");
+	TeletalkCombooInfo.classList.remove("active24");
+}
+TeletalkMinuteButton.onclick = () =>{
+	TeletalkMinuteInfo.classList.add("active22");
+	TeletalkCallRateInfo.classList.remove("active23");
+	TeletalkCombooInfo.classList.remove("active24");
+}
+TeletalkCallRateButton.onclick = () =>{
+	TeletalkCallRateInfo.classList.add("active23");
+	TeletalkCombooInfo.classList.remove("active24");
+}
+TeletalkCombooButton.onclick = () =>{
+	TeletalkCombooInfo.classList.add("active24");
+}
+
+
+const GrameenInternetButton=document.querySelector(".GrameenOffers .GrameenInternetButton");
+const GrameenInternetInfo=document.querySelector(".GrameenInternetInfo");
+const GrameenMinuteButton=document.querySelector(".GrameenOffers .GrameenMinuteButton");
+const GrameenMinuteInfo=document.querySelector(".GrameenMinuteInfo");
+
+const GrameenCallRateButton=document.querySelector(".GrameenOffers .GrameenCallRateButton");
+const GrameenCallRateInfo=document.querySelector(".GrameenCallRateInfo");
+const GrameenCombooButton=document.querySelector(".GrameenOffers .GrameenCombooButton");
+const GrameenCombooInfo=document.querySelector(".GrameenCombooInfo");
+
+
+GrameenInternetButton.onclick = () =>{
+	GrameenInternetInfo.classList.add("active31");
+	GrameenMinuteInfo.classList.remove("active32");
+	GrameenCallRateInfo.classList.remove("active33");
+	GrameenCombooInfo.classList.remove("active34");
+}
+GrameenMinuteButton.onclick = () =>{
+	GrameenMinuteInfo.classList.add("active32");
+	GrameenCallRateInfo.classList.remove("active33");
+	GrameenCombooInfo.classList.remove("active34");
+}
+GrameenCallRateButton.onclick = () =>{
+	GrameenCallRateInfo.classList.add("active33");
+	GrameenCombooInfo.classList.remove("active34");
+}
+GrameenCombooButton.onclick = () =>{
+	GrameenCombooInfo.classList.add("active34");
+}
+
+
+
+const BanglalinkInternetButton=document.querySelector(".BanglalinkOffers .BanglalinkInternetButton");
+const BanglalinkInternetInfo=document.querySelector(".BanglalinkInternetInfo");
+const BanglalinkMinuteButton=document.querySelector(".BanglalinkOffers .BanglalinkMinuteButton");
+const BanglalinkMinuteInfo=document.querySelector(".BanglalinkMinuteInfo");
+const BanglalinkCallRateButton=document.querySelector(".BanglalinkOffers .BanglalinkCallRateButton");
+const BanglalinkCallRateInfo=document.querySelector(".BanglalinkCallRateInfo");
+const BanglalinkCombooButton=document.querySelector(".BanglalinkOffers .BanglalinkCombooButton");
+const BanglalinkCombooInfo=document.querySelector(".BanglalinkCombooInfo");
+
+BanglalinkInternetButton.onclick = () =>{
+	BanglalinkInternetInfo.classList.add("active36");
+	BanglalinkMinuteInfo.classList.remove("active37");
+	BanglalinkCallRateInfo.classList.remove("active38");
+	BanglalinkCombooInfo.classList.remove("active39");
+}
+BanglalinkMinuteButton.onclick = () =>{
+	BanglalinkMinuteInfo.classList.add("active37");
+	BanglalinkCallRateInfo.classList.remove("active38");
+	BanglalinkCombooInfo.classList.remove("active39");
+	
+}
+BanglalinkCallRateButton.onclick = () =>{
+	BanglalinkCallRateInfo.classList.add("active38");
+	BanglalinkCombooInfo.classList.remove("active39");
+}
+BanglalinkCombooButton.onclick = () =>{
+	BanglalinkCombooInfo.classList.add("active39");
+}
+
+	 
+</script>				
 </body>
 </html>
+ 
+
+
+	
+	
+
+
+		
+	
+	
+	
+
