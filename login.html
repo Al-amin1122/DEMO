@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>LogIn</title>
+<style>
+*{margin:0px;padding:0px;}
+.logInPage{
+max-width:200px;
+height:310px;
+margin:0px auto;
+border-radius:30px;
+background:#f1f1f1;
+transform-translate:(-50%, 50%);
+animation-name:a;
+animation-duration:2.5s;
+animation-fill-mode:forwards;
+
+}
+.logInPage h3{
+text-align:center;
+position:relative;
+top:23px;
+width:100%;
+font-family:arial black;
+}
+.formlist{
+width:150px;
+margin:auto;
+margin-top:40px;
+}
+.formlist input{
+width:90%;
+outline:none;
+border:none;
+margin:5px 10px;
+border-bottom:4px solid #444;
+padding:10px 8px;
+border-radius:25px;
+}
+.formlist div{
+padding:6px 13px;
+color:white;
+background:gray;
+outline:none;
+border:none;
+margin:10px 45px;
+border-radius:50px;
+font-family:arial black;
+}
+@keyframes a{
+from{margin-top:0px;}
+to{margin-top:150px;}
+}
+</style>
+</head>
+<body>
+<div class="logInPage">
+<h3>Sign-up</h3>
+
+<form class="formlist">
+<input type="text" placeholder="Enter your name..."/>
+
+<input type="email" placeholder="Email address"/>
+
+<input id="pass" type="password" placeholder=" Password"/>
+
+<input id="compass" type="password" placeholder="Confirme pass"/>
+<div onclick="myButton()">LogIn</div>
+</form>
+</div>
+
+<script>
+function myButton(){
+var a=document.getElementById('pass').value;
+var b=document.getElementById('compass').value;
+
+if((a=="48640")&&(b=="48640")){
+document.write('<a href="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/Application.html">Hisab</a>');
+}
+else if((a=="")&&(b=="")){
+alert('Empty password');
+}
+else{
+alert('Invalid password');
+}
+
+}
+</script>
+
+</body>
+</html>
